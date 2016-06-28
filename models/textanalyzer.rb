@@ -27,7 +27,7 @@ def most_used_letter
       letter_repetitions = all_letters_in_string.count(letter)
       if letter_repetitions > letter_count
         letter_count = letter_repetitions
-        most_used_letter = letter
+        most_used_letter = letter.upcase
       end
     end
     biggest = [most_used_letter, letter_count]
